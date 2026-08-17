@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root, .dark {
+    --brand: 38 80% 45%;
+    --brand-light: 38 80% 58%;
+    --brand-h: 38;
+    --brand-s: 80%;
+    --background: 200 18% 7%;
+    --foreground: 38 30% 92%;
+    --muted: 200 14% 13%;
+    --muted-foreground: 38 12% 65%;
+    --border: 200 16% 22%;
+    --card: 200 16% 10%;
+    --card-foreground: 38 30% 92%;
+  }
+  * { border-color: hsl(var(--border)); }
+  body { background-color: hsl(var(--background)); color: hsl(var(--foreground)); font-feature-settings: 'rlig' 1, 'calt' 1; }
+  html, html.dark { color-scheme: dark; }
+}
+
+@layer components {
+  .btn-primary { @apply inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium text-white transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2; background-color: hsl(var(--brand-h) var(--brand-s) 32%); }
+  .btn-primary:hover { background-color: hsl(var(--brand-h) var(--brand-s) 27%); }
+  .btn-outline { @apply inline-flex items-center justify-center rounded-md border border-border bg-background px-4 py-2 text-sm font-medium transition hover:bg-muted; }
+  .card { @apply rounded-lg border bg-card text-card-foreground transition hover:border-nav/50 hover:shadow-md; }
+  .section { @apply mx-auto max-w-7xl px-4 py-12 md:py-16; }
+}

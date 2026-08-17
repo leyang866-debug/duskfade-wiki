@@ -1,0 +1,27 @@
+{
+  "site": { "name": "Duskfade Guide", "shortName": "Duskfade", "description": "Master Duskfade with our guide covering platforming, combat, bosses, abilities, upgrades, secrets, collectibles, and essential tips for every region.", "tagline": "Practical Clockpunk guides for every player.", "legalNotice": "Fan-made community resource." },
+  "nav": { "home": "Home", "guides": "Guides", "toggleTheme": "Toggle theme", "menu": "Menu", "close": "Close", "search": "Search", "language": "Language" },
+  "search": { "placeholder": "Search Duskfade guides...", "noResults": "No matching guides found", "open": "Open search" },
+  "shared": { "readMore": "Read Guide", "lastUpdated": "Last updated", "publishedOn": "Published", "noArticles": "No guides available yet.", "relatedArticles": "Related Guides", "onThisPage": "On this page", "backToCategory": "Back to Guides", "browseAll": "Browse all guides", "viewAll": "Explore the Guide", "commentsHeading": "Comments" },
+  "overview": { "guides": { "overviewTitle": "Duskfade Guides", "overviewDescription": "Practical Duskfade guides for movement, combat, bosses, collectibles, platforms, and every essential first-playthrough decision." } },
+  "home": {
+    "meta": { "title": "Duskfade Guide – Tips, Walkthrough, Bosses & Secrets", "description": "Master Duskfade with our guide covering platforming, combat, bosses, abilities, upgrades, secrets, collectibles, and essential tips for every region." },
+    "hero": { "badge": "Duskfade • Clockpunk Action Platformer", "title": "Master Duskfade's Clockpunk Adventure", "description": "Duskfade is a fast 3D Clockpunk action platformer. Use this guide for platforming tips, combat, boss strategies, collectibles, upgrades, secrets, and every key route across Tier Fell.", "ctaPrimary": "Start the beginner guide", "ctaPrimaryHref": "/tips", "ctaSecondary": "Explore every guide", "ctaSecondaryHref": "/guides" },
+    "updates": { "title": "Fresh Duskfade guides" },
+    "start": { "badge": "Start Here", "title": "Four rules for a stronger first run", "cards": [
+      { "number": "1", "title": "Keep moving", "description": "Link jumps, dashes, grapples, and attacks instead of resetting after every landing.", "icon": "lucide:move-right", "href": "/gameplay" },
+      { "number": "2", "title": "Choose your difficulty", "description": "Pick a setting that leaves room to learn dodge timing before boss patterns tighten up.", "icon": "lucide:shield", "href": "/tips" },
+      { "number": "3", "title": "Mark locked routes", "description": "Return with new movement tools instead of forcing a secret before the route is ready.", "icon": "lucide:map-pin", "href": "/collectibles" },
+      { "number": "4", "title": "Read the boss arena", "description": "Every fight blends combat and platforming, so keep a movement lane open.", "icon": "lucide:swords", "href": "/bosses" }
+    ] },
+    "popular": { "badge": "Core Topics", "title": "Plan your next run", "quickLinks": [ { "label": "Gameplay and combat", "href": "/gameplay" }, { "label": "Beginner tips", "href": "/tips" }, { "label": "Collectibles", "href": "/collectibles" }, { "label": "Boss guide", "href": "/bosses" } ] },
+    "explore": { "title": "Duskfade Guide essentials", "description": "Use these focused guides to turn new movement tools, combat lessons, and hidden routes into a clear plan.", "modules": [
+      { "order": 1, "name": "Movement & combat", "description": "Build a reliable platforming chain and learn when to lock on, dodge, and counterattack.", "href": "/gameplay", "displayType": "labeled-cards", "highlights": [{ "label": "Movement", "detail": "Double jump, wall jump, grapple, glide, and rails." }, { "label": "Combat", "detail": "Lock-on, combos, dodge, and counters." }] },
+      { "order": 2, "name": "Bosses & exploration", "description": "Prepare for hybrid arenas, mark paths for return trips, and use upgrades where they matter.", "href": "/bosses", "displayType": "labeled-cards", "highlights": [{ "label": "Bosses", "detail": "Wrath, Guayota, and The Watcher." }, { "label": "Secrets", "detail": "Return once a new tool opens the route." }] },
+      { "order": 3, "name": "Collecting & buying", "description": "Track upgrades, collectibles, platforms, demo access, playtime, reviews, and soundtrack details.", "href": "/collectibles", "displayType": "labeled-cards", "highlights": [{ "label": "Collectibles", "detail": "Ten known collection types." }, { "label": "Before you buy", "detail": "Platforms, price, demo, and playtime." }] }
+    ] },
+    "closingCta": { "title": "Make the next run count", "description": "Start with the system you want to improve, then put it to work in Tier Fell.", "primary": "Read the beginner guide" },
+    "gameStats": [ { "label": "Released", "value": "13 Aug 2026", "icon": "lucide:calendar-days" }, { "label": "Platforms", "value": "PC / PS5 / Xbox / Switch 2", "icon": "lucide:monitor-smartphone" }, { "label": "Developer", "value": "Weird Beluga", "icon": "lucide:building-2" }, { "label": "Metacritic", "value": "79 / 100", "icon": "lucide:star" } ]
+  },
+  "footer": { "playGame": "Official Site", "officialDiscord": "Discord", "officialYoutube": "YouTube", "officialTwitter": "X", "officialReddit": "Reddit", "about": "About", "faq": "FAQ", "privacyPolicy": "Privacy Policy", "termsOfService": "Terms of Service", "copyright": "Copyright", "copyrightText": "© 2026 Duskfade Guide. Fan-made community resource." }
+}

@@ -1,0 +1,83 @@
+{
+  "game": "Duskfade",
+  "game_cn": "时夜渐明",
+  "game_type": "3D平台跳跃+快节奏战斗（类Jak and Daxter/古惑狼精神续作）",
+  "release_date": "2026-08-13（正式发售，非EA）",
+  "price": "$29.99（首发-20%=$23.99，8/28截止）",
+  "developer": "Weird Beluga",
+  "publisher": "Fireshine Games",
+  "platforms": "PC (Steam) + 完整控制器支持 + Steam Deck已认证",
+  "app_id": "2542020",
+  "reviews": "特别好评 285篇",
+  "steam_data": {
+    "cn_name": "时夜渐明",
+    "tagline": "冲破时间的枷锁，在奇幻世界提费尔德展开冒险，拯救姐姐",
+    "features": "时间操控/机械鸟咕咕/4大区域(森林/水下/沙漠/山峰)/25成就/类魂标签",
+    "media_quote": "GameSpot: It looks like the spiritual successor to Jak and Daxter that we've been waiting years for",
+    "languages": "简体中文✅/英语/法语/德语/西语等9种",
+    "genre": "动作/冒险"
+  },
+  "domain": "待定（建议duskfadeguide.space或duskfade.wiki类）",
+  "github": "leyang866-debug/duskfade-wiki",
+  "keywords": {
+    "main": {"word": "duskfade", "volume": 37700, "kd": 14, "intent": "NAV"},
+    "categories": [
+      {
+        "category": "Main",
+        "keywords": [
+          {"word": "duskfade", "volume": 37700, "kd": 14},
+          {"word": "duskfade game", "volume": 340, "kd": 24},
+          {"word": "duskfade wiki", "volume": null, "kd": null}
+        ]
+      },
+      {
+        "category": "Info & Release",
+        "keywords": [
+          {"word": "duskfade release date", "volume": 6700, "kd": 20},
+          {"word": "duskfade price", "volume": 1800, "kd": 14},
+          {"word": "duskfade genre", "volume": 840, "kd": null},
+          {"word": "duskfade 2026", "volume": 488, "kd": 13},
+          {"word": "duskfade engine", "volume": null, "kd": 12},
+          {"word": "duskfade review", "volume": null, "kd": null},
+          {"word": "duskfade metacritic", "volume": null, "kd": null}
+        ]
+      },
+      {
+        "category": "Platforms",
+        "keywords": [
+          {"word": "duskfade steam", "volume": 1800, "kd": 14},
+          {"word": "duskfade xbox", "volume": 618, "kd": null},
+          {"word": "duskfade pc", "volume": 374, "kd": null},
+          {"word": "duskfade switch 2", "volume": 286, "kd": null},
+          {"word": "duskfade ps5", "volume": null, "kd": null},
+          {"word": "duskfade playstation", "volume": 160, "kd": null},
+          {"word": "duskfade ps5 release date", "volume": null, "kd": 24}
+        ]
+      },
+      {
+        "category": "Gameplay & Demo",
+        "keywords": [
+          {"word": "duskfade gameplay", "volume": 1300, "kd": 14},
+          {"word": "download duskfade demo", "volume": 870, "kd": 18},
+          {"word": "duskfade demo", "volume": 260, "kd": null},
+          {"word": "duskfade demo length", "volume": null, "kd": null},
+          {"word": "duskfade how long to beat", "volume": null, "kd": null}
+        ]
+      },
+      {
+        "category": "Community & Misc",
+        "keywords": [
+          {"word": "duskfade reddit", "volume": 667, "kd": null},
+          {"word": "duskfade weird beluga", "volume": 221, "kd": null},
+          {"word": "duskfade parents guide", "volume": 140, "kd": null},
+          {"word": "duskfade steamdb", "volume": 96, "kd": null},
+          {"word": "duskfade physical copy", "volume": null, "kd": null},
+          {"word": "时夜渐明", "volume": null, "kd": null}
+        ]
+      }
+    ],
+    "rising": ["metacritic", "duskfade metacritic", "duskfade physical copy", "duskfade switch 2 physical", "duskfade test", "duskfade gameplay", "how long to beat duskfade", "duskfade key"],
+    "homepage_main": "duskfade",
+    "homepage_alt": "duskfade guide"
+  }
+}
