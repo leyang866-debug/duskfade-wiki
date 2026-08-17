@@ -42,4 +42,4 @@ export const site: SiteConfig = {
 
 export const siteUrl: string = (process.env.SITE_URL || 'https://duskfade.store').replace(/\/$/, '');
 export const ga4MeasurementId = 'G-VMFD61CYCK';
-export const googleSiteVerification = '<meta name="google-site-verification" content="F3kn_GACjrJqk5FPxImRmvfTxa_N9mTeZiHfUkXEpa0" />';
+export const googleSiteVerification = 'F3kn_GACjrJqk5FPxImRmvfTxa_N9mTeZiHfUkXEpa0';
