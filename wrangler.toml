@@ -8,4 +8,4 @@ compatibility_date = "2026-08-11"
 directory = "dist"
 
 [vars]
-SITE_URL = "https://example.com"
+SITE_URL = "https://duskfade.store"
