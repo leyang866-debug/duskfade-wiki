@@ -1,0 +1,13 @@
+---
+/** Optional ProfitRate ad unit, disabled when either value is empty. */
+const scriptUrl = import.meta.env.PUBLIC_PROFITRATE_SCRIPT_URL as string | undefined;
+const containerId = import.meta.env.PUBLIC_PROFITRATE_CONTAINER_ID as string | undefined;
+const show = !!(scriptUrl && containerId);
+---
+
+{show && (
+  <div class="my-8 flex min-h-[100px] flex-col items-center" aria-label="Advertisement">
+    <div id={containerId}></div>
+    <script async={true} data-cfasync="false" src={scriptUrl}></script>
+  </div>
+)}

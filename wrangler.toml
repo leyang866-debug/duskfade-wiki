@@ -9,3 +9,5 @@ directory = "dist"
 
 [vars]
 SITE_URL = "https://duskfade.store"
+PUBLIC_PROFITRATE_SCRIPT_URL = "https://pl31075146.profitableratecpmnetwork.com/1175ab871c6ed8cf90fb083fc1783520/invoke.js"
+PUBLIC_PROFITRATE_CONTAINER_ID = "container-1175ab871c6ed8cf90fb083fc1783520"
