@@ -8,6 +8,12 @@ const show = !!(scriptUrl && containerId);
 {show && (
   <div class="my-8 flex min-h-[100px] flex-col items-center" aria-label="Advertisement">
     <div id={containerId}></div>
-    <script async={true} data-cfasync="false" src={scriptUrl}></script>
+    <script is:inline define:vars={{ scriptUrl }}>
+      const profitRateScript = document.createElement('script');
+      profitRateScript.async = true;
+      profitRateScript.dataset.cfasync = 'false';
+      profitRateScript.src = scriptUrl;
+      document.currentScript?.parentElement?.appendChild(profitRateScript);
+    </script>
   </div>
 )}
