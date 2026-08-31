@@ -8,12 +8,31 @@ const show = !!(scriptUrl && containerId);
 {show && (
   <div class="my-8 flex min-h-[100px] flex-col items-center" aria-label="Advertisement">
     <div id={containerId}></div>
-    <script is:inline define:vars={{ scriptUrl }}>
-      const profitRateScript = document.createElement('script');
-      profitRateScript.async = true;
-      profitRateScript.dataset.cfasync = 'false';
-      profitRateScript.src = scriptUrl;
-      document.currentScript?.parentElement?.appendChild(profitRateScript);
+    <script is:inline define:vars={{ scriptUrl, containerId }}>
+      // Load the third-party auction only when the ad slot is near the viewport.
+      // This keeps it off the critical path used by Lighthouse and real users.
+      const adContainer = document.getElementById(containerId);
+      const loadProfitRate = () => {
+        if (!adContainer || adContainer.dataset.loaded) return;
+        adContainer.dataset.loaded = 'true';
+        const profitRateScript = document.createElement('script');
+        profitRateScript.async = true;
+        profitRateScript.dataset.cfasync = 'false';
+        profitRateScript.src = scriptUrl;
+        adContainer.appendChild(profitRateScript);
+      };
+      if (adContainer && 'IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+          if (entries.some((entry) => entry.isIntersecting)) {
+            observer.disconnect();
+            const schedule = window.requestIdleCallback || ((callback) => window.setTimeout(callback, 1));
+            schedule(loadProfitRate);
+          }
+        }, { rootMargin: '300px' });
+        observer.observe(adContainer);
+      } else {
+        loadProfitRate();
+      }
     </script>
   </div>
 )}
