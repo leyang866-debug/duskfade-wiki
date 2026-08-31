@@ -25,8 +25,7 @@ jobs:
           SITE_URL: ${{ vars.SITE_URL }}
           PUBLIC_PROFITRATE_SCRIPT_URL: https://pl31075146.profitableratecpmnetwork.com/1175ab871c6ed8cf90fb083fc1783520/invoke.js
           PUBLIC_PROFITRATE_CONTAINER_ID: container-1175ab871c6ed8cf90fb083fc1783520
-      - run: npx wrangler deploy --name "$CLOUDFLARE_WORKER_NAME" --assets dist
+      - run: npx wrangler deploy --assets dist
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
-          CLOUDFLARE_WORKER_NAME: ${{ vars.CLOUDFLARE_WORKER_NAME }}
