@@ -29,8 +29,8 @@ const LEGAL_TITLES: Record<string, string> = {
   contact: 'Contact',
 };
 
-const { locale: localeParam, legal } = Astro.props as { locale: string; legal: string };
-if (!isLocale(localeParam) || localeParam === defaultLocale) {
+const { locale: localeParam, legal } = Astro.params;
+if (!localeParam || !legal || !isLocale(localeParam) || localeParam === defaultLocale) {
   return new Response('Not Found', { status: 404 });
 }
 const locale: Locale = localeParam;
